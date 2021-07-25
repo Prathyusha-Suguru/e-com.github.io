@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>add-product</title>
+        <style>
+            body{
+                margin: 30px 30px 10px 50px;
+                background-image: url("2.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .bb{
+                background-color: black;
+                color: rgb(253, 253, 253);
+                float: right;
+                width: 150px;
+                font-size:large;
+            }
+            .bb:hover{
+                background-color: rgb(255, 255, 255);
+                color: #000000;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="product.html"><button class="bb">products display</button></a>
+        </div>
+        <form>  
+            <div class="container">  
+            <h1> Add new product</h1>
+            <label>product name</label>   
+          <input type="text" name="productname" placeholder= "productname" size="30" required /> 
+          </div><br>
+
+          <div>         
+          <label>
+            product description : 
+        </label><br> 
+            <textarea cols="80" rows="5" placeholder="product description" value="description" required>  
+            </textarea>  
+          </div><br>
+          <div>
+          <label>   
+          Quality:  
+          </label>
+          <input type="radio" value="1" name="quality" checked > 1   
+          <input type="radio" value="2" name="quality"> 2   
+          <input type="radio" value="3" name="quality"> 3  
+          <input type="radio" value="4" name="quality"> 4
+          <input type="radio" value="5" name="quality"> 5   
+          </div><br>
+          <div>
+          <label>   
+          Price :  
+          </label>  
+          <input type="number" name="price" />   
+          </div><br>
+          <div>
+              <label>MFD :</label>
+              <input type="date">
+          </div><br>
+          <div>
+            <label>Expiry date:</label>
+            <input type="date">
+        </div><br>
+          <div>
+              <label>
+                  Add Images
+              </label>
+              <input type="file" src="filetoupload">
+          </div><br>
+                   
+          <button type="submit" class="add">Add</button>    
+        </div>
+        </form>  
+    </body>
+</html>
