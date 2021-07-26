@@ -11,6 +11,7 @@
                 background-repeat: no-repeat;
                 background-position:inherit;
                 background-size:cover;
+                background-color: rgb(106, 189, 238);
 
             }
             h1{
@@ -22,9 +23,18 @@
                 text-align: center;
             }
             .main{
-                margin-top: 160px;
-                margin-left: 500px;
-                margin-right: 500px;  
+                margin-top: 10px;
+                align-content: center; 
+            }
+            @media only screen and (max-width:500px) {
+                body{
+                background-image: url("1.jpg");
+                background-repeat: no-repeat;
+                background-position:inherit;
+                backface-visibility: fixed;
+                background-size:100% 200%;
+
+                }
             }
         </style>
     </head>
@@ -35,11 +45,13 @@
         <br>
         <div class="signin">
             <b>Username</b>&nbsp;&nbsp;&nbsp;
-            <input type="text" id="fname" name="firstname" placeholder="Your name.."><br><br>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required><br><br>
             <br>
             <b>password</b>&nbsp;&nbsp;&nbsp;
-            <input type="password" id="password" name="password" placeholder="password.."><br>
-            <br><br>
+            <input type="password" id="password" name="password" placeholder="password.." required><br>
+            <br>
+            <b>Address</b>&nbsp;&nbsp;&nbsp;
+            <textarea id="address" rows="4" clos="50" required>enter your address</textarea><br><br>
             <a href="product.html"><button class="button"> SignIn  </button></a>
             <br>
             <br>

@@ -8,7 +8,8 @@
     display: block;
 }
 .product{
-    width: 24%;
+    width: 300px;
+    height: 400px;
     margin: 15px;
     box-sizing: border-box;
     float: left;
@@ -79,13 +80,16 @@
 }
 
 .bb{
-
-        color:black;
-        float: right;
-        width: 100px;
-        height: 1cm;
-        font-size:xx-large;
-        text-decoration: none;
+    background-color: black;
+    color:rgb(253, 253, 253);
+    float: right;
+    width: 100px;
+    height: 1cm;
+    font-size:xx-large;
+    text-decoration: none;
+    box-shadow: dimgray;
+    text-align: center;
+    border-radius: 4mm;
 }
 .bb:hover{
         background-color: rgb(88, 85, 85);
@@ -93,6 +97,27 @@
 }
 .total{
     height: 1cm;
+}
+.ty{
+    background-color: rgb(107, 243, 95);
+    color:rgb(0, 0, 0);
+    float: center;
+    width: auto;
+    height: 1cm;
+    font-size:xx-large;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4mm;
+}
+.bbb{
+    background-color: black;
+    color:rgb(253, 253, 253);
+    font-size:xx-large;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4mm;
+    width: 200px;
+    height: 2cm;
 }
 @media(max-width: 1000px){
     .content{
